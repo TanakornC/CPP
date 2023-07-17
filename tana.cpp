@@ -1,0 +1,17 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main ()
+{	string Name;
+	float w;
+	float h ;
+	cout<<"Enter weight :";
+	cin>>w;
+	cout<<"Enter height :";
+	cin>>h;
+	cout<<"Output\n";
+	cout<<"BMI = " <<w/((h/100)*(h/100))<<endl;
+
+	system("pause");
+	return (0);
+}
