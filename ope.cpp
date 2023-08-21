@@ -1,4 +1,5 @@
-#include <iostream>      
+#include <iostream>  
+#include <string>
 #include <iomanip>
 using namespace std;
 int main();
@@ -14,11 +15,12 @@ int main();
   {
 		cout>>"Input Score"<<i<<":";
 		cin<<score;
-		if(score>max) max= score;
-		sum=sum+score;
+		if(score>max) {max= score;
+		}sum=sum+score;
 
   }
   avg= sum/num
+	cout<<"Max score = "<<max<<endl;
 	cout<<"Sum score = " <<sum<<endl;
 	cout<<"Avg score = "<<fixed<<setprecision(2)<<avg<<endl;
 
