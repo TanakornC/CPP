@@ -4,37 +4,44 @@
 #include <string>
 using namespace std;
 int main()
-{    int num[3][3];
-	string name[3];
-		for(int i=0;i<3;i++){
-			cout<<"Student"<<i+1<<endl;
-			cout<<"Enter Name ["<<i+1<<"] :";
-			cin>>name[1];
-			for(int j=0;j<3;j++)
-
-
-			{
-				cout<<"Enter Score ["<<i<<"]["<<j<<"] :";
-				cin>>num[i][j];
-			}
-		}
-		
-
-	
-	cout<<"Show Scores"<<endl;
-	cout<<setfill('-')<<setw(30)<<""<<endl;
-	cout<<"Student\tMath\tScience\tEnglish\n";
-	cout<<setfill('-')<<setw(30)<<""<<endl;
-
-	for(int i=0;i<3;i++)
-		
-	{	cout<<i+1<<" "<<name[i]<<"\t";
+{   
+	int num[2][3];
+	cout<<"Enter Array 2D 2x3 "<<endl;
+	for(int i=0;i<2;i++)
+	{
 		for(int j=0;j<3;j++)
 		{
-			cout<<num[i][j]<<"\t";
+			cout<<"Array 2d["<<i<<"]["<<j<<"]";
+			cin>>num[i][j];
+		}
 
+	}
+	
+	for(int i=0;i<2;i++){
+			
+		for(int j=0;j<3;j++)
+		{
+			cout<<num[i][j]<< " ";
+		
 		}cout<<endl;
 	}
+
+
+	cout<<"Transpose Martix 2d 2x3"<<endl;
+
+	
+	for(int i=0;i<3;i++){
+			
+		for(int j=0;j<2;j++)
+		{
+			cout<<num[j][i]<< " ";
+		
+		}cout<<endl;
+	}
+	
+
+
+
 
     system("pause");
     return 0;
